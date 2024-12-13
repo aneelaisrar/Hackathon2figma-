@@ -9,8 +9,8 @@ import TrendingProducts from "./components/Trendingproducts";
 import Discount from "./components/Discount";
 import TopCategories from "./components/TopCategores";
 import Newslater from "./components/Newslater";
-import Blog from   "./components/blog";
 import Offers from "./components/offers";
+import Blog from "./components/blog"
 //
 
 
@@ -28,8 +28,11 @@ export default function Home() {
       <TrendingProducts/>
       <Discount/>
       <TopCategories/>
-      <Newslater/>
       <Blog/>
+      <Newslater/>
+      
+      
+  
       <Footer/>
     
     </div>
