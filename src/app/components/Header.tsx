@@ -7,7 +7,6 @@ import { CiHeart } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import Link from "next/link";
-import LatestProducts from "./LatestProducts";
 
 export default function Header() {                                                                                                                    
     return (
@@ -89,9 +88,6 @@ export default function Header() {
                         About
                     </Link>
                 
-                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/Blog">
-                        Blog
-                    </Link>
                     <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/shoplist">
                         Shop
                     </Link>
