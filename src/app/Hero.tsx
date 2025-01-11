@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const slides = [
   {
-    title: "New Furniture Collection Trends in 2024",
+    title: "New Furniture Collection Trends in 2020",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     buttonText: "Shop Now",
@@ -15,7 +15,7 @@ const slides = [
   {
     title: "Modern Chair Designs for Your Home",
     description:
-      "Discover the latest modern furniture trends to elevate your living space.", 
+      "Discover the latest modern furniture trends to elevate your living space.",
     buttonText: "Shop Now",
     chairImage: "/chair3.png", // Replace with another chair image
     lampImage: "/lamp.png", // Replace with another lamp image

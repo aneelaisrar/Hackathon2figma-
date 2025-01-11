@@ -1,5 +1,4 @@
 import Image from "next/image";
-import {FaFacebook} from "react-icons/fa"
 import {FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
@@ -41,10 +40,11 @@ const Footer = () => {
 
               <p className="mt-4 text-xs leading-4 text-center sm:text-left">
                 Contact Info: <br />
-                Gulshan sector 17 A Gulzar Hijri Road Karachi
+        GulsHAN Secror 17A Gulszarayhijri road karachi
               </p>
             </div>
-              {/* Categories Section */}
+  
+            {/* Categories Section */}
             <div className="mt-4 leading-6">
               <h3 className="text-[18px] text-black">Categories</h3>
               <ul className="mt-2 space-x-0 md:space-y-5 md:mb-6  text-sm">
@@ -93,15 +93,15 @@ const Footer = () => {
       
     <p className="text-sm text-[#9DA0AE] sm:ml-6 sm:mt-0 mt-4">
         © 2024 Hekto —
-        <a>
+        <a
+      
+        >
           @Right Reserved
         </a>
       </p>
       <span className="flex flex-row sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
-     <div className="w-5 h-5 " ><a href="https://www.facebook.com/profile.php?id=61566047674042" target="_blank"><FaFacebook  /></a></div> 
-    
-        <div className="w-5 h-5  ml-3 text-gray-900"><a href="linkedin.com/in/aneela-israr-271003300" target="_blank"><FaLinkedin /></a></div>
+      <div className="w-5 h-5  ml-3 text-gray-900"><a href="linkedin.com/in/aneela-israr-271003300" target="_blank"><FaLinkedin  /></a></div>
 
     </span>
     </div>
@@ -114,6 +114,12 @@ const Footer = () => {
   
   export default Footer;
   
+
+
+
+
+
+
 
 
 

@@ -1,14 +1,17 @@
+
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { PiPhoneCallBold } from "react-icons/pi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FiUser } from "react-icons/fi";
-import { CiHeart } from "react-icons/ci";
+import { CiHeart } from "react-icons/ci";  
 import { FiShoppingCart } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
+import Link from "next/link";
+import LatestProducts from "./LatestProducts";
 
-export default function Header() {
+export default function Header() {                                                                                                                    
     return (
-        <div>
+        <div>                                                                                         
             {/* Header Container */}
             <div className="h-[50px] w-full bg-[#7E33E0] flex items-center justify-between px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 space-x-4">
                 {/* Left Section: Envelope and Phone */}
@@ -24,7 +27,7 @@ export default function Header() {
                     {/* Phone Icon and Number */}
                     <div className="flex items-center space-x-2">
                         <PiPhoneCallBold className="w-4 h-4 text-white" />
-                        <span className="hidden sm:inline text-white font-[Josefin Sans] font-semibold text-sm md:text-base">
+                          <span className="hidden sm:inline text-white font-[Josefin Sans] font-semibold text-sm md:text-base">
                             (12345)67890
                         </span>
                     </div>
@@ -38,6 +41,7 @@ export default function Header() {
                             English
                         </span>
                         <RiArrowDropDownLine className="w-4 h-4 text-white" />
+
                     </div>
 
                     {/* USD Dropdown */}
@@ -76,28 +80,26 @@ export default function Header() {
                     Hekto
                 </div>
 
-               {/* Navbar Links */}
-<div className="hidden sm:flex items-center space-x-4 ml-8">
-<span className="text-[#FB2E86] font-[Lato] text-sm md:text-base hover:text-[#e0336a] cursor-pointer">
-Home
-</span>
-<span className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer">
-Pages
-</span>
-<span className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer">
-Products
-</span>
-<span className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer">
-Blog
-</span>
-<span className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer">
-Shop
-</span>
-<span className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer">
-Contact
-</span>
-</div>
-
+                {/* Navbar Links */}
+                <div className="hidden sm:flex items-center space-x-4 ml-8">
+                    <Link className="text-[#FB2E86] font-[Lato] text-sm md:text-base hover:text-[#e0336a] cursor-pointer"href="/Home">
+                        Home
+                    </Link>
+                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/about">
+                        About
+                    </Link>
+                
+                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/Blog">
+                        Blog
+                    </Link>
+                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/shoplist">
+                        Shop
+                    </Link>
+                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/ContectUs">
+                        Contact
+                    </Link>
+                </div>
+<div  ></div>
 
                 {/* Search Bar */}
                 <div className="flex items-center ml-auto">
@@ -112,5 +114,6 @@ Contact
                 </div>
             </div>
         </div>
+
     );
 }

@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Navbar from '../components/navbar';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function AccountPage() {
   return (
     <>
       {/* Header */}
-      <Navbar />
+      <Header />
 
       {/* Page Content */}
       <div className="bg-gray-100 py-10">

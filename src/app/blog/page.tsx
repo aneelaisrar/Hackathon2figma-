@@ -19,35 +19,37 @@ type Blog = {
 const blogs: Blog[] = [
   {
     id: 1,
-    title: "Blog Post 1",
+    title: "Blog post 1",
     author: "Author 1",
     date: "December 9, 2024",
     category: "Design",
     excerpt: "This is a brief excerpt from the blog post.",
-    image: "/images/blog1.png", // Updated file name
+    image: "blog1.png", // Updated file name
   },
   {
     id: 2,
-    title: "Blog Post 2",
+    title: "Blog  post 2",
     author: "Author 2",
     date: "December 8, 2024",
     category: "Technology",
     excerpt: "This is another brief excerpt from the second blog post.",
-    image: "/images/blog2.png", // Updated file name
+    image: "blog2.png", // Updated file name
   },
   {
     id: 3,
-    title: "Blog Post 3",
+    title: "Blog post  3",
     author: "Author 3",
     date: "December 7, 2024",
     category: "Travel",
     excerpt: "An excerpt from the third blog post about travel.",
-    image: "/images/blog3.png", // Updated file name
+    image: "/blog3.png", // Updated file name
   },
 ];
 
 const BlogPage = () => {
   return (
+    
+
     <div>
       {/* Header Section */}
       <div className="py-16 ml-8 lg:ml-36 space-y-2">
@@ -120,9 +122,9 @@ const BlogPage = () => {
             <h3 className="text-lg font-bold text-[#001F54] mb-2">Recent Posts</h3> {/* Dark blue */}
             <ul className="space-y-2">
               {[
-                { id: 4, image: "/images/blog4m.png", title: "Recent Blog 1", date: "December 6, 2024" },
-                { id: 5, image: "/images/blog5m.png", title: "Recent Blog 2", date: "December 5, 2024" },
-                { id: 6, image: "/images/blog6m.png", title: "Recent Blog 3", date: "December 4, 2024" },
+                { id: 4, image: "/blog4m.png", title: "Recent Blog 1", date: "December 8, 2024" },
+                { id: 5, image: "/blog5m.png", title: "Recent Blog 2", date: "December 7, 2024" },
+                { id: 6, image: "/blog6m.png", title: "Recent Blog 3", date: "December 6, 2024" },
               ].map((blog) => (
                 <li key={blog.id} className="flex items-center space-x-4">
                   <Image
@@ -160,6 +162,7 @@ const BlogPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
