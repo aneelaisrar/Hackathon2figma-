@@ -80,7 +80,7 @@ const Cart = () => {
                   />
                   <div>
                     <p className="font-semibold text-[#1D3178] text-xs sm:text-base">{item.name}</p>
-                    <p className="text-sm text-gray-500 text-sm sm:text-sm">
+                    <p className="text-sm text-gray-500 ">
                       Color: {item.color}, Size: {item.size}
                     </p>
                   </div>
@@ -117,7 +117,7 @@ const Cart = () => {
       {/* Cart Totals */}
       <div className="p-6 bg-gray-50 rounded-md shadow-md flex flex-col justify-between">
         <div>
-          <h2 className="text-xl font-bold mb-4 text-[#1D3178] text-xs sm:text-xl">Cart Totals</h2>
+          <h2 className="text-xl font-bold mb-4 text-[#1D3178]  sm:text-xl">Cart Totals</h2>
           <p className="flex justify-between mb-2 text-[#1D3178] text-xs sm:text-sm">
             <span>Subtotal:</span> <span>${calculateTotal().toFixed(2)}</span>
           </p>
@@ -130,7 +130,7 @@ const Cart = () => {
         </div>
         {/* Shipping Calculator */}
         <div className="p-6 bg-gray-50 rounded-md shadow-md">
-          <h2 className="text-xl font-bold mb-4 text-[#1D3178] text-xs sm:text-xl">Calculate Shipping</h2>
+          <h2 className="text-xl font-bold mb-4 text-[#1D3178] sm:text-xs">Calculate Shipping</h2>
           <input
             type="text"
             placeholder="Bangladesh"

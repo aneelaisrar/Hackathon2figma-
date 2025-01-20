@@ -43,7 +43,7 @@ function LatestProducts() {
       {/* Product Grid */}
       <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {products.map((product, index) => (
-          <div key={product.id} className="relative group">
+          <div key={index} className="relative group">
             {/* Product Image */}
             <div className="w-full bg-gray-200 flex justify-center items-center relative overflow-hidden h-[300px] transition-all duration-300 group-hover:bg-white">
               {/* Sale Tag */}

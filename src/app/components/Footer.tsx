@@ -85,7 +85,7 @@ const Footer = () => {
          
 
         </div>
-        </footer>
+        
 {/* bottom */}
 
         <div className="bg-[#E7E4F8]  ">
@@ -93,21 +93,18 @@ const Footer = () => {
       
     <p className="text-sm text-[#9DA0AE] sm:ml-6 sm:mt-0 mt-4">
         © 2024 Hekto —
-        <a
+        </p>
+
+           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <div className="text-3xl ml-3 text-gray-900"><FaLinkedin  /></div>
       
-        >
-          @Right Reserved
-        </a>
-      </p>
-      <span className="flex flex-row sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-
-      <div className="w-5 h-5  ml-3 text-gray-900"><a href="linkedin.com/in/aneela-israr-271003300" target="_blank"><FaLinkedin  /></a></div>
-
-    </span>
-    </div>
+              
+               </span>
+                 @Right Reserved
+                
   </div>
-
-      
+        </div>
+        </footer>
         </div>
     );
   };

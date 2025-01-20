@@ -53,9 +53,9 @@ export default function Header() {
 
                     {/* Login Section */}
                     <div className="flex items-center space-x-1">
-                        <span className="hidden sm:inline text-[#F1F1F1] font-[Josefin Sans] font-semibold text-sm md:text-base">
+                        <Link  className="hidden sm:inline text-[#F1F1F1] font-[Josefin Sans] font-semibold text-sm md:text-base"href="/login">
                             Login
-                        </span>
+                        </Link>
                         <FiUser className="w-4 h-4 text-white" />
                     </div>
 
@@ -93,6 +93,9 @@ export default function Header() {
                     </Link>
                     <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/ContectUs">
                         Contact
+                    </Link>
+                    <Link className="text-[#0D0E43] font-[Lato] text-sm md:text-base hover:text-[#e03333] cursor-pointer" href="/cart">
+                        Cart
                     </Link>
                 </div>
 <div  ></div>
