@@ -6,7 +6,7 @@ function Discount() {
     <div className="w-full py-20">
       <div className="w-full max-w-screen-xl mx-auto">
         {/* Heading */}
-        <h2 className="text-[#0c1124] text-4xl font-bold text-center mb-8">Discount Item</h2>
+        <h2 className="text-[#0c1124] text-4xl font-bold text-center mb-8">Dynamic Routing Discount Item</h2>
 
         {/* Tag Buttons */}
         <div className="flex justify-center space-x-8 mb-12">
